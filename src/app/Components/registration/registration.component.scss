@@ -1,0 +1,248 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #db4242;
+}
+
+#registration-container {
+  background-image: url('../../img/reg.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.register-button {
+  margin-top: 80px !important;
+  border-radius: 20px;
+  background-color: #051826!important;
+  color: #ffffff;
+}
+
+.form {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 10px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 45px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  text-align: center;
+}
+
+.form2 {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 10px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 45px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  text-align: center;
+}
+
+.form .h2 {
+  font-weight: bold;
+}
+
+.form .mat-form-field:first-child {
+  margin-bottom: 10px;
+}
+
+.form .link-button {
+  text-decoration: none;
+  color: inherit;
+}
+
+.form .link-button:focus {
+  color: inherit;
+}
+
+.form .login-link a:hover {
+  color: red;
+}
+
+form button {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+
+    height: auto;
+  }
+
+  #registration-container {
+    height: 100vh;
+  }
+
+  .form {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-width: 5px;
+    padding: 10px;
+  }
+
+  .form2 {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-width: 5px;
+    padding: 10px;
+  }
+
+  .register-button {
+    margin-top: 20px !important;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #registration-container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .form {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-width: 5px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #db4242;
+  }
+
+  #registration-container {
+    background-image: url('../../img/reg.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .register-button {
+    margin-top: 80px !important;
+    border-radius: 20px;
+    background-color: #051826!important;
+    color: #ffffff;
+  }
+
+  .form {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 10px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 45px rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .form .h2 {
+    font-weight: bold;
+  }
+
+  .form .mat-form-field:first-child {
+    margin-bottom: 10px;
+  }
+
+  .form .link-button {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .form .link-button:focus {
+    color: inherit;
+  }
+
+  .form .login-link a:hover {
+    color: red;
+  }
+
+  form button {
+    margin-top: 10px;
+  }
+
+@media only screen and (min-width: 1441px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #db4242;
+  }
+
+  #registration-container {
+    background-image: url('../../img/reg.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .register-button {
+    margin-top: 80px !important;
+    border-radius: 20px;
+    background-color: #051826!important;
+    color: #ffffff;
+  }
+
+  .form {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 10px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 45px rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .form .h2 {
+    font-weight: bold;
+  }
+
+  .form .mat-form-field:first-child {
+    margin-bottom: 10px;
+  }
+
+  .form .link-button {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .form .link-button:focus {
+    color: inherit;
+  }
+
+  .form .login-link a:hover {
+    color: red;
+  }
+
+  form button {
+    margin-top: 10px;
+  }
+
+}
+
+}

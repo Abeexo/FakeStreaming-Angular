@@ -1,0 +1,47 @@
+<div class="container" id="registration-container">
+  <div class="form">
+    <h2>Registration</h2>
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()" class="m-4 form2">
+      <mat-form-field appearance="outline">
+        <mat-label>First Name</mat-label>
+        <input matInput formControlName="firstName" placeholder="Enter your first name">
+        <mat-error *ngIf="registrationForm.controls['firstName'].invalid && registrationForm.controls['firstName'].touched">First name is required</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="lastName" placeholder="Enter your last name">
+        <mat-error *ngIf="registrationForm.controls['lastName'].invalid && registrationForm.controls['lastName'].touched">Last name is required</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" placeholder="Enter your email">
+        <mat-error *ngIf="registrationForm.controls['email'].invalid && registrationForm.controls['email'].touched">
+          <span *ngIf="registrationForm.controls['email'].hasError('required')">Email is required</span>
+          <span *ngIf="registrationForm.controls['email'].hasError('email')">Invalid email format</span>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password" type="password" placeholder="Enter your password">
+        <mat-error *ngIf="registrationForm.controls['password'].invalid && registrationForm.controls['password'].touched">
+          <span *ngIf="registrationForm.controls['password'].hasError('required')">Password is required</span>
+          <span *ngIf="registrationForm.controls['password'].hasError('minlength')">Password must be at least 6 characters</span>
+          <span *ngIf="registrationForm.controls['password'].hasError('passwordStrength')">Password must contain at least one number and one uppercase letter.</span>
+        </mat-error>
+      </mat-form-field>
+
+
+      <button mat-raised-button color="primary" type="submit" class="register-button">Register</button>
+
+
+    </form>
+
+    <div class="login-link">
+      <p class="">Already registered? Go to <a class="link-button" routerLink='/login'>Login</a></p>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #051826;
+    justify-content: center;
+    padding-top: 100px;
+  }
+
+
+  .container-CardFilm {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #CAF0F8;
+  }
+
+  .container-CardFilm h3 {
+    margin-top: 0;
+  }
+
+  .container-CardFilm img {
+    margin-bottom: 10px;
+  }
+
+  .container-CardFilm p {
+    margin-bottom: 10px;
+  }
+
+  .container-CardFilm-delete {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .container-CardFilm-delete:hover {
+    color: red;
+  }

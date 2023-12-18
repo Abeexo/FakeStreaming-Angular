@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#login-container {
+  background-image: url('../../img/reg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.form1 {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 10px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 45px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  text-align: center;
+}
+
+.form {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 10px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 45px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  text-align: center;
+}
+
+.form mat-form-field:first-child {
+  margin-bottom: 10px;
+}
+
+.form mat-form-field {
+  background-color: white !important;
+  border-color: black !important;
+}
+
+.form mat-form-field input {
+  color: black !important;
+}
+
+.login-button {
+  text-decoration: none !important;
+  color: inherit;
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+  border-radius: 20px;
+  background-color: #051826 !important;
+  color: #ffffff;
+}
+
+.link-button {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.link-button:link,
+.link-button:visited {
+  text-decoration: none;
+}
+
+.link-button:hover {
+  color: red;
+}
+
+.custom-error {
+  background-color: #ffffff !important;
+  border-radius: 10px !important;
+  border: 10px solid rgba(255, 255, 255, 0.4) !important;
+  box-shadow: 0 0 45px rgba(255, 255, 255, 0.5) !important;
+  padding: 10px !important;
+  margin-top: 10px !important;
+  text-align: center !important;
+  color: red !important;
+}
+
+button {
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 10px;
+  }
+}

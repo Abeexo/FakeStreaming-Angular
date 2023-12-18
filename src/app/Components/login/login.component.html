@@ -1,0 +1,25 @@
+<div class="container" id="login-container">
+  <div class="form1">
+    <form [formGroup]="loginForm" class="m-4 form">
+      <mat-form-field appearance="outline">
+        <mat-label>Email address*</mat-label>
+        <input matInput formControlName="email" type="email" placeholder="Enter email">
+        <mat-error *ngIf="submitted && loginForm.get('email')?.hasError('required')">Campo richiesto</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password" type="password" placeholder="Password">
+        <mat-error *ngIf="submitted && loginForm.get('password')?.hasError('required')">Campo richiesto</mat-error>
+        <mat-error *ngIf="submitted && loginForm.get('password')?.hasError('passwordStrength')">Password non valida</mat-error>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" (click)="onSubmit()" class="login-button">Login</button>
+      <p>not registered? back to <a class="link-button" routerLink='/registration'>Registration</a></p>
+    </form>
+    <div >
+
+    </div>
+  </div>
+
+</div>

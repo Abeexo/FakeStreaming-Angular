@@ -1,0 +1,156 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.search-title{
+    display: flex;
+}
+
+.ContainerAll{
+    background-color: #051826;
+}
+
+.cardFILM{
+    height: 400px;
+    padding-left: 5%;
+    background-color: #CAF0F8;
+    margin-bottom: 2%;
+}
+
+.container-film{
+    width: 60%;
+    margin-left: 2%;
+    margin: 0 auto;
+}
+
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .container-film-button {
+    width: 30%;
+    height: 20%;
+    background-color: #051826;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .container-film-button a{
+    color: white;
+  }
+
+  .container-film-button:active {
+    background-color: red;
+  }
+
+  .container-film-button:focus {
+    outline: none;
+  }
+
+  .column{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .row{
+    display: flex;
+  }
+
+  .searchContainer{
+    width: 30%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+
+  .cardFILM-img{
+    width: 400px;
+    height: 200px;
+    position: relative;
+    top: 20%;
+  }
+
+  .cardFILM-header{
+    position: relative;
+    left: 3%;
+    top: 8%;
+  }
+
+ /* Media Query per dispositivi con schermo fino a 576px */
+@media (max-width: 576px) {
+    .container-film {
+        width: 90%;
+    }
+
+    .cardFILM {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        bottom: 0;
+        padding-left: 4%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column {
+        margin-left: 0;
+    }
+
+    .cardFILM-img {
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Media Query per dispositivi con schermo da 577px a 768px */
+@media (min-width: 577px) and (max-width: 768px) {
+    .container-film {
+        width: 80%;
+    }
+}
+
+/* Media Query per dispositivi con schermo da 769px a 992px */
+@media (min-width: 769px) and (max-width: 992px) {
+    .container-film {
+        width: 70%;
+    }
+}
+
+/* Media Query per dispositivi con schermo da 993px a 1200px */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .container-film {
+        width: 50%;
+    }
+}
+
+/* Media Query per dispositivi con schermo oltre i 1200px */
+@media (min-width: 1201px) {
+    .container-film {
+        width: 50%;
+    }
+}

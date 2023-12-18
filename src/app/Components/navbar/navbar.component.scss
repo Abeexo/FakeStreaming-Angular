@@ -1,0 +1,68 @@
+@import '~@angular/material/prebuilt-themes/purple-green.css';
+
+.navbar {
+  display: flex;
+position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  background-color: #051826;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.676);
+  z-index: 1;
+
+}
+
+.centered-sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.utente {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar{
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .centered-sections{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .navbar{
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .centered-sections{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+  }
+}

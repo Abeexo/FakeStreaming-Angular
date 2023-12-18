@@ -1,0 +1,86 @@
+<div class="container">
+
+<nav class="navbar">
+  <a href="/" class="film">StreamZone</a>
+  <div class="centered-sections">
+    <a  href="/home#heropage">Hero</a>
+    <a  href="/home#sezione2">About</a>
+    <a  href="/listing">Listing</a>
+    <a  href="/favorites">Favorites</a>
+  </div>
+  <div class="log">
+  <span class="utente">Ciao {{ loggedInUserName | upperpipe }}</span>
+  <button class="logout"(click)="logout()">Logout</button>
+</div>
+
+</nav>
+
+<div id="heropage" class="container-heropage1">
+  <div class="content-heropage" id="hero2">
+    <h1 class="film-heropage">StreamZone</h1>
+    <p class="description-heropage">Esplora l'infinito dello streaming.</p>
+  </div>
+</div>
+
+<div class="sezione2">
+
+  <div id="sezione2" class="container2-sezione2">
+
+    <div class="card1">
+    <div class="photo-card1-sezione2" id="card1">
+    </div>
+    <div class="description1-card-sezione2">
+      <p>Benvenuti nella nostra piattaforma streaming, il luogo ideale per immergervi
+        in un mondo di intrattenimento senza limiti. Con un vasto catalogo di film, serie TV e
+         documentari, abbiamo tutto ciò che desiderate per soddisfare le vostre voglie di visione.
+          La nostra piattaforma offre una navigazione intuitiva e user-friendly, permettendovi di trovare
+          facilmente i contenuti che vi interessano. Sia che siate appassionati di avventura,
+           amanti del brivido o appassionati di commedie romantiche,
+            troverete sicuramente qualcosa che catturerà la vostra attenzione. </p>
+    </div>
+
+
+  </div>
+
+  <div class="card2">
+    <div class="description1-card-sezione2">
+      <p>Esplorate un universo di intrattenimento personalizzato, progettato per soddisfare i
+        vostri gusti unici. Con le nostre funzionalità di profilo personalizzato, potete creare il
+        vostro elenco di preferiti, aggiungendo i film e le serie TV che vi hanno colpito di più. Inoltre,
+        potete ricevere consigli su misura basati sui vostri interessi e sulle vostre precedenti scelte di
+        visione. Il nostro team di esperti cura costantemente il catalogo, selezionando i migliori contenuti
+        di qualità provenienti da tutto il mondo. Che siate fan dei grandi classici o desideriate scoprire le
+        ultime novità, qui troverete sempre una vasta gamma di opzioni per tutte le vostre esigenze. </p>
+    </div>
+    <div class="photo-card1-sezione2" id="card2">
+    </div>
+  </div>
+</div>
+
+
+</div>
+<footer class="footer">
+  <div class="container-footer">
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis vulputate tincidunt.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="/home#heropage">HeroPage</a></li>
+        <li><a href="/home#sezione2">Sezione 2</a></li>
+        <li><a href="/listing">Listing</a></li>
+        <li><a href="/favorites">Favorites</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>123 Street, City, Country</p>
+      <p>Email: info@example.com</p>
+      <p>Phone: +1 123 456789</p>
+    </div>
+  </div>
+</footer>
+
+</div>

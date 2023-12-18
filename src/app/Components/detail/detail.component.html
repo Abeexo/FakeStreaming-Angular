@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+
+
+<div *ngIf="!isLoading"></div>
+<div class="container">
+  <div class="contdetail">
+  <div class="cover"> <img [src]="film.Images" alt=""></div>
+  <div class="desc">
+  <h2>{{ film.Title }}</h2>
+  <p>{{ film.Plot }}</p>
+</div>
+</div>
+</div>
+

@@ -1,0 +1,12 @@
+<mat-toolbar class="navbar" color="gray">
+  <a mat-button routerLink="" >StreamZone</a>
+  <div class="spazio"></div>
+  <div class="centered-sections">
+    <a mat-button class="homepage" routerLink="/home">Homepage</a>
+    <a mat-button class="listing" routerLink="/listing">Listing</a>
+    <a mat-button class="favorites" routerLink="/favorites">Favorites</a>
+  </div>
+  <div class="spazio"></div>
+  <span class="utente">Ciao, {{ loggedInUserName | upperpipe }}</span>
+</mat-toolbar>
+
