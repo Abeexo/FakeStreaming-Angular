@@ -1,4 +1,25 @@
-# ProgettoA
+# Fake Streaming Portal with Angular
+Description
+
+This Angular project is a web application that simulates a streaming portal. It allows users to register, log in, view a list of movies fetched from an API, open a detailed page for each movie, and add or remove movies from favorites.
+Features
+
+    User Authentication: Allows users to securely register and log in.
+    Movie Catalog: Retrieves and displays a list of movies from an API.
+    Movie Details: Allows users to view detailed information for each movie.
+    Favorites: Option to add or remove movies from favorites for quick access.
+
+Technologies Used
+
+    Angular: Framework used for developing the web application.
+    TypeScript: Language used to implement logic and functionality.
+    Angular Router: Manages routing and navigation between different pages of the app.
+    HttpClient Module: Used to make HTTP requests to the movie API.
+    Local Storage/Session Storage: Stores information related to authentication and favorite movies.
+
+---------------------------------
+
+# Fake streaming
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
 
